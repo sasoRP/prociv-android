@@ -1,0 +1,4 @@
+# safelist
+branches:
+  only:
+  - travis-ci-integration
