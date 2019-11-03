@@ -23,6 +23,11 @@ android:
     - sys-img-x86-android-26
     - sys-img-armeabi-v7a-android-17
     
+before_install:
+  - touch $HOME/.android/repositories.cfg
+  - yes | sdkmanager "platforms;android-29"
+  - yes | sdkmanager "build-tools;29.0.2"
+    
 # safelist
 branches:
   only:
