@@ -30,8 +30,3 @@ before_install:
   
 script:
   - ./gradlew assemble test
-    
-# safelist
-branches:
-  only:
-  - travis-ci-integration
